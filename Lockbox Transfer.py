@@ -54,12 +54,7 @@ def get_concat_pages(im2):  #joins all pages in Tif vertically
             #delete_file('Tempx_page_%s.tif'%(p,)) #cleans up temp file before moving on to next page.
  
 
-
-
-
-
         except EOFError:                        
-
 
 
             break    
@@ -82,7 +77,6 @@ def get_concat_pages(im2):  #joins all pages in Tif vertically
             current_page = Image.open('temp_page_%s.tif'%(p,))      
             
 
-
             if p == 0:
                 dst.paste(current_page, (0, 0))
 
@@ -101,9 +95,7 @@ def get_concat_pages(im2):  #joins all pages in Tif vertically
         except EOFError:                        
 
 
-
             break
-
 
 
     return dst  #retuns combined image of multipage Tif
