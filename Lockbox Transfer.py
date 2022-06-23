@@ -25,7 +25,6 @@ def delete_file(file):
     path = os.path.join(location,file) 
     os.remove(path)    
 
-
 def get_concat_v(im1, im2):   #joins 2 iamges vertically
     dst = Image.new('RGB', (im2.width, im1.height + im2.height))
     dst.paste(im1, (0, 0))
