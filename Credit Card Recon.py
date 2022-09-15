@@ -8,7 +8,7 @@ CyberSource_Pre = pd.read_csv('CyberSource.csv')
 #Rename column in CyberSource file to set a key
 CyberSource_Pre = CyberSource_Pre.rename(columns={'Merchant Reference Number':'External Payment Gateway ID'})
 
-#Join files based on the key, return rows from CyberSource that appear in Ascend, save as new file
+#Join files based on the key, return rows from CyberSource that appear in Ascend
 inner_join = pd.merge(CyberSource_Pre, Ascend_Pre, on = 'External Payment Gateway ID', how = 'inner')
 
 #Delete rows containing 'Fail' or 'Reversal' in the 'Applications' column
