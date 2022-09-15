@@ -1,8 +1,3 @@
-#To install Pillow Image eidtor, type these 2 commands in CMD:
-#https://www.tutorialspoint.com/python_pillow/python_pillow_environment_setup.htm
-#       python -m pip install pip
-#       python -m pip install pillow
-
 from PIL import Image
 import os 
 from datetime import datetime
