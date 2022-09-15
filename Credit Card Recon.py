@@ -5,7 +5,7 @@ import pandas as pd
 Ascend_Pre = pd.read_csv('Ascend.csv')
 CyberSource_Pre = pd.read_csv('CyberSource.csv')
 
-#Rename column in CyberSource file so we can set a key
+#Rename column in CyberSource file to set a key
 CyberSource_Pre = CyberSource_Pre.rename(columns={'Merchant Reference Number':'External Payment Gateway ID'})
 
 #Join files based on the key, return rows from CyberSource that appear in Ascend, save as new file
