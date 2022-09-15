@@ -1,4 +1,4 @@
-# Python-Projects
+# Python-Automation
 Scripts and small projects of the Python variety that I actively use to automate tasks.
 
 ## Lockbox Transfer
