@@ -8,4 +8,4 @@ This script is used to organize file images received from a bank lockbox. The ba
 - Concatenates the respective images together into one TIFF file
 - Names the file according to check number and check amount
 - Saves the file into the timestamped folder
-- Repeats the process until it is done with the index file
+- Repeats the process until it has looped through the index file
