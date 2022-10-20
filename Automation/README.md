@@ -9,3 +9,6 @@ This script is used to organize file images received from a bank lockbox. The ba
 - Names the file according to check number and check amount
 - Saves the file into the timestamped folder
 - Repeats the process until it has looped through the index file
+
+## Credit Card Recon
+I use this file to determine if any sucessful credit card transactions processed through our online giving site are missing from our CRM. It is basically an inner join of a report from our CRM to a report from our payment processor. Each row is a transaction. The inner join returns the transactions that are missing from the CRM report.
