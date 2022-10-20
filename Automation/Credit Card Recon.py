@@ -21,7 +21,7 @@ inner_join = inner_join[['Date and Time', 'External Payment Gateway ID', 'Last N
                          'Billing Country', 'Appeal']]
 
 #Save csv file to drive
-inner_join.to_csv('Drive:/File_Name.csv')
+inner_join.to_csv('Drive:\File_Name.csv')
 
 print(inner_join)
 
