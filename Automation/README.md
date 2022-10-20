@@ -10,5 +10,5 @@ This script is used to organize file images received from a bank lockbox. The ba
 - Saves the file into the timestamped folder
 - Repeats the process until it has looped through the index file
 
-## Credit Card Recon
+## [Credit Card Recon](https://github.com/recordofloaduswar/Python/blob/71c79994eb5f2875133a8586b12633933fe6a1b2/Automation/Credit_Card_Recon.py)
 I use this file to determine if any sucessful credit card transactions processed through our online giving site are missing from our CRM. It is basically an inner join of a report from our CRM to a report from our payment processor. Each row is a transaction. The inner join returns the transactions that are missing from the CRM report.
