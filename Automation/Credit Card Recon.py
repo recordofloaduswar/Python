@@ -24,7 +24,3 @@ inner_join = inner_join[['Date and Time', 'External Payment Gateway ID', 'Last N
 inner_join.to_csv('Drive:\File_Name.csv')
 
 print(inner_join)
-
-
-#print(type(CyberSource_Pre))
-#print(type(CRM_Pre))
