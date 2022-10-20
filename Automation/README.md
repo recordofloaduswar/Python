@@ -1,7 +1,7 @@
 # Python-Automation
 Scripts and small projects of the Python variety that I actively use to automate tasks.
 
-## [Lockbox File Prep](Automation/Lockbox_File_Prep.py)
+## [Lockbox File Prep](https://github.com/recordofloaduswar/Python/blob/b483ba29d0496e416936988195b3a3bd2f6ecd2d/Automation/Lockbox_File_Prep.py)
 This script is used to organize file images received from a bank lockbox. The bank sends a folder with TIFF images and an index file. The index file indicates which images are part of the same transaction. In this case, each transaction contains an image of a check and any accompanying documents (i.e. appeals, notes, check stubs). After running the Python script in the same folder as the images and index file, the script does the following:
 - Creates a timestamped folder
 - Reads the index file
