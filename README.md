@@ -1,4 +1,4 @@
-# Python-Automation
+# Python
 Scripts and small projects of the Python variety that I actively use to automate tasks.
 
 ## [Lockbox File Prep](https://github.com/recordofloaduswar/Python/blob/b483ba29d0496e416936988195b3a3bd2f6ecd2d/Automation/Lockbox_File_Prep.py):bank:
