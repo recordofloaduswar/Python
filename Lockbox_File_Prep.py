@@ -71,7 +71,6 @@ def get_concat_pages(im2):  #joins all pages in Tif vertically
 
     return dst  #retuns combined image of multipage Tif
 
-
 new_path = create_dir() #Make new directory for output files
 
 filename = "index" #Create a variable for the file name.
