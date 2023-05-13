@@ -6,7 +6,7 @@ from os import path
 
 def create_dir():    #Function to create timestamped directory for output files
     parent_dir = (os.getcwd())  #get current directory python is active
-    new_dir = 'C:\\Folder\\Path\\' + dt.now().strftime("%m.%d.%Y") + ' Check Deposits'
+    new_dir = 'Z:\\Folder_1\\Lockbox\\' + dt.now().strftime("%m.%d.%Y") + ' Check Deposits'
     new_path = os.path.join(parent_dir,new_dir) #combines main directory info and new directory
     if (os.path.exists(new_path))== False:
         os.mkdir(new_path) #makes new timestamped folder, program output files will be saved here
