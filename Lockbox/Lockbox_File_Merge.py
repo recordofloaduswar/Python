@@ -34,9 +34,9 @@ def get_concat_pages(im2):  #joins all pages in Tif vertically
                                                     #for i in range(pages)
         try:                
             im2.seek(p)
-            im2.save('temp_page_%s.tif'%(p,))     #create a temp file of current page of tif
+            im2.save('temp_page_%s.jpg'%(p,))     #create a temp file of current page of tif
             #print(p)
-            current_page = Image.open('Temp_page_%s.tif'%(p,))      
+            current_page = Image.open('Temp_page_%s.jpg'%(p,))      
             
             width, height = current_page.size
             page_list.append(height)
@@ -54,7 +54,7 @@ def get_concat_pages(im2):  #joins all pages in Tif vertically
     for p in range(pages):  #Goes through the Tif file page by page, saves each one as temp_page_1 and so on
                                                     #for i in range(pages)
         try:                
-            current_page = Image.open('temp_page_%s.tif'%(p,))      
+            current_page = Image.open('temp_page_%s.jpg'%(p,))      
             
             if p == 0:
                 dst.paste(current_page, (0, 0))
@@ -63,7 +63,7 @@ def get_concat_pages(im2):  #joins all pages in Tif vertically
                 running_total = running_total + page_list[p-1]
                 dst.paste(current_page, (0, running_total))
                 
-            delete_file('temp_page_%s.tif'%(p,))
+            delete_file('temp_page_%s.jpg'%(p,))
 
         except EOFError:                        
 
@@ -102,14 +102,14 @@ while i<len(line):  #look continues until it reaches the last line of the index 
         im2 = Image.open(CheckInfo)  #open CheckInfo file for manipulation 
 
         
-        get_concat_pages(im2).save('Combined.tif') #function to save multipage Check Info to single page
-        im3 = Image.open('Combined.tif')
+        get_concat_pages(im2).save('Combined.jpg') #function to save multipage Check Info to single page
+        im3 = Image.open('Combined.jpg')
 
-        Final_Image = 'C' + CheckNumber + ' ' + 'Amt_' + CheckAmount.replace('.','_')+ ' ' + Batch + '_' + Item + '.tif'  #Final_Image is the file name of final ouput, displays file names of check front and info
+        Final_Image = 'C' + CheckNumber + ' ' + 'Amt_' + CheckAmount.replace('.','_')+ ' ' + Batch + '_' + Item + '.jpg'  #Final_Image is the file name of final ouput, displays file names of check front and info
         file_path = os.path.join(new_path, Final_Image) #creates path for new timestamped folder and file name of final output
 
         get_concat_v(im1, im3).save(file_path) #combine Check Front and single page Check Info
-        delete_file('Combined.tif') #delete single page Check Info
+        delete_file('Combined.jpg') #delete single page Check Info
         i+=1
 
     else:
